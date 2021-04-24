@@ -64,7 +64,7 @@ buttonA5=Button(root,text='=',command=lambda:btnEqu(),padx=15,pady=15,font=('cal
 buttonA6=Button(root,text='clr',command=lambda:btnclear('clr'),padx=15,pady=15,font=('calibri',10,'bold'),activebackground='#4895ef').grid(row=4,column=0,padx=2,pady=3)
 
 #other keys
-buttonA7=Button(root,text='.',command=btnEqu,padx=15,pady=15,font=('calibri',10,'bold'),activebackground='#4895ef').grid(row=4,column=2,padx=2,pady=3 )
+buttonA7=Button(root,text='.',command=lambda:btnclick('.'),padx=15,pady=15,font=('calibri',10,'bold'),activebackground='#4895ef').grid(row=4,column=2,padx=2,pady=3 )
 buttonA8=Button(root,text='<[X]',command=lambda:btnbksp(),padx=15,pady=15,font=('calibri',10,'bold'),activebackground='#4895ef').grid(row=1,column=4 ,padx=2,pady=3)
 buttonA9=Button(root,text='Pwr',command=lambda:btnclick('**'),padx=15,pady=15,font=('calibri',10,'bold'),activebackground='#4895ef').grid(row=2,column=4 ,padx=2,pady=3)
 buttonA10=Button(root,text='mod',command=lambda:btnclick('%'),padx=15,pady=15,font=('calibri',10,'bold'),activebackground='#4895ef').grid(row=3,column=4,padx=2,pady=3)
