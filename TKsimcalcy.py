@@ -24,8 +24,7 @@ def btnEqu():
     global operator
     calc=str(eval(operator))
     display.set(calc)
-    operator=calc
-    return 
+    operator=calc 
 
 def btnbksp():
     global operator
