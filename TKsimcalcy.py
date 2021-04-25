@@ -32,7 +32,6 @@ def btnbksp():
     operator=operator[:-1]
     display.set(operator)
 
-    
 
 
 
