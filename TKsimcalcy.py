@@ -1,5 +1,4 @@
 from tkinter import*
-import math
 root=Tk()
 display=StringVar()
 
@@ -9,7 +8,7 @@ root.geometry('263x272+3+5')
 root.title('Simple Calculator')
 
 
-#functions of the calculator
+#Functions for calculator
 def btnclick(num):
     global operator
     operator=operator+str(num)
@@ -34,12 +33,12 @@ def btnbksp():
 
 
 
-#display
+#Display
 screen=Entry(root,textvariable=display,justify='left').grid(columnspan=5,padx=3,pady=6)
 
 
 
-#numbers and griding
+#Number keys
 button1=Button(root,text='7',command=lambda:btnclick(7),padx=15,pady=15,font=('calibri',10,'bold'),activebackground='#ffe8d6').grid(row=1,column=0,padx=2,pady=3)
 button2=Button(root,text='8',command=lambda:btnclick(8),padx=15,pady=15,font=('calibri',10,'bold'),activebackground='#ffe8d6').grid(row=1,column=1,padx=2,pady=3)
 button3=Button(root,text='9',command=lambda:btnclick(9),padx=15,pady=15,font=('calibri',10,'bold'),activebackground='#ffe8d6').grid(row=1,column=2,padx=2,pady=3)
@@ -53,7 +52,7 @@ button0=Button(root,text='0',command=lambda:btnclick(0),padx=15,pady=15,font=('c
 
 
 
-#arithmetic symbols adn griding
+#Arithmetic keys
 buttonA1=Button(root,text='+',command=lambda:btnclick('+'),padx= 15,pady=15,font=('calibri',10,'bold'),activebackground='#4895ef').grid(row=4,column=3,padx=2,pady=3 )
 buttonA2=Button(root,text='/',command=lambda:btnclick('/'),padx= 15,pady=15,font=('calibri',10,'bold'),activebackground='#4895ef').grid(row=1,column=3 ,padx=2,pady=3)
 buttonA3=Button(root,text='*',command=lambda:btnclick('*'),padx= 15,pady=15,font=('calibri',10,'bold'),activebackground='#4895ef').grid(row=2,column=3 ,padx=2,pady=3)
@@ -61,7 +60,7 @@ buttonA4=Button(root,text='-',command=lambda:btnclick('-'),padx= 15,pady=15,font
 buttonA5=Button(root,text='=',command=lambda:btnEqu(),padx=15,pady=15,font=('calibri',10,'bold'),activebackground='#4895ef').grid(row=4,column=4 ,padx=2,pady=3)
 buttonA6=Button(root,text='clr',command=lambda:btnclear('clr'),padx=15,pady=15,font=('calibri',10,'bold'),activebackground='#4895ef').grid(row=4,column=0,padx=2,pady=3)
 
-#other keys
+#Function keys
 buttonA7=Button(root,text='.',command=lambda:btnclick('.'),padx=15,pady=15,font=('calibri',10,'bold'),activebackground='#4895ef').grid(row=4,column=2,padx=2,pady=3 )
 buttonA8=Button(root,text='<[X]',command=lambda:btnbksp(),padx=15,pady=15,font=('calibri',10,'bold'),activebackground='#4895ef').grid(row=1,column=4 ,padx=2,pady=3)
 buttonA9=Button(root,text='Pwr',command=lambda:btnclick('**'),padx=15,pady=15,font=('calibri',10,'bold'),activebackground='#4895ef').grid(row=2,column=4 ,padx=2,pady=3)
